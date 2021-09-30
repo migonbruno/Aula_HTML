@@ -1,0 +1,137 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	color: #363636;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+	background-color: #708090;
+}
+
+footer{
+	background-color: #4f4f4f;
+	color: #ffffff;
+	width: 100%;
+	height: 60px;
+	bottom: 0;
+	text-align: center;
+	padding-top: 30px;
+	/* remove as definições de float utilizadas anteriormente no documento */
+	clear: both;
+	position: relative;
+}
+
+header{
+	background-color: #1c1c1c;
+	color: #ffffff;
+	width: 100%;
+	height: 80px;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav ul li{
+	float: left;
+	margin-right: 25px;
+	line-height: 25px;
+	font-family: verdana;
+	font-size: 1.2em;
+}
+
+nav ul li a{
+	text-decoration: none;
+	display: block;
+	color: #ffffff;
+	padding: 15px;
+}
+
+nav ul li a:hover{
+	text-decoration: none;
+	display: block;
+	color: #ffd700;
+	background-color: #4f4f4f;
+	padding: 10px;
+}
+
+#banner{
+	width: 1500px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+#logo{
+	width: 200;
+	height: 60px;
+	float: left;
+}
+
+#oqueé{
+	height: 60px;
+	margin-top: 30px;
+	text-align: center;
+	color: #8B6914;
+
+}
+
+#despertar{
+	height: 60px;
+	margin-top: 50px;
+	text-align: center;
+	color: #8B6914;
+}
+
+#imggenesis{
+	margin-top: 50px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#oqueé1{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#oqueé2{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+#genesis1{
+	text-align: center;
+	margin-bottom: 50px;
+	float: center;
+}
+
+#siteoficial{
+	text-align: center;
+	margin-top: 180px;
+}	
+
+#home{
+	width: 1543px;
+	margin: 0 auto;
+}	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
