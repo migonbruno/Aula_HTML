@@ -1,0 +1,43 @@
+﻿<!doctype html>		server pro nevegador identificar
+
+
+LISTAS ORDENADAS SÃO COMEÇADAS COM <ol> e para cada item da lista <li>
+CSS INLINE
+style="list-style-type:square;"> (circle,disc,none) somente para lista não ordenada
+
+<a ancora para link
+href= referencia do endereço onde está
+target="_blank" (abre o link numa outra aba do navegador
+
+elemento de css id e classes
+id só pode ler um elemento com essa nomeclatura
+
+<div> divisão
+<nav> navegação
+
+<img src="img/logo.png"
+
+<ol> lista ordenada
+<ul> lista não ordenada
+<li> lista
+href=" indica onde está o arquivo que vai ser acessado
+
+
+tag abrindo e fechando é container
+
+tag empty só termina /
+
+<table> define a estrutura da tabela
+
+<tr> cria uma nova linha na tabela (table roll)
+
+<td> cria uma nova célula de dados
+
+<hr/> faz aquela linha lá
+
+action="mailto:contato@empresa.com.br"
+action="mandaform.php"
+
+<input type="text" name="assunto" id="assunto" size="40" />
+
+checked serve para marcar automaticamente a porra do sexo 

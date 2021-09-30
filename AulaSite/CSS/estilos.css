@@ -1,0 +1,192 @@
+*{
+	margin: 0;	/* define a distância entre os objetos */
+	/* define a distância entre a borda do objeto e seu conteúdo */
+	padding: 0; 
+}
+
+body{
+	color: #363636;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 0.8em;
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background-color: #1c1c1c;
+	color: #ffffff;
+	width: 100%;
+	height: 80px;
+}
+
+footer{
+	background-color: #4f4f4f;
+	color: #ffffff;
+	width: 100%;
+	height: 60px;
+	bottom: 0;
+	text-align: center;
+	padding-top: 30px;
+	/* remove as definições de float utilizadas anteriormente no documento */
+	clear: both;
+}
+
+nav ul{
+	list-style-type: none;
+}
+
+nav ul li{
+	float: left;
+	margin-right: 5px;
+	line-height: 20px;
+	font-family: verdana;
+	font-size: 1.2em;
+}
+
+nav ul li a{
+	text-decoration: none;
+	display: block;
+	color: #ffffff;
+	padding: 10px;
+}
+
+nav ul li a:hover{
+	text-decoration: none;
+	display: block;
+	color: #ffd700;
+	background-color: #4f4f4f;
+	padding: 10px;
+}
+
+#logo{
+	width: 200px;
+	height: 60px;
+	float: left;	/* posiciona o objeto a partir da borda esquerda */
+}
+
+#hdr{
+	width: 1200px;
+	height: 60px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 0 auto;
+}
+
+#banner{
+	width: 1200px;
+	height: 380px;
+	margin: 0 auto;
+}
+
+#conteudo{
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 5px;
+}
+
+#coldir{
+	width: 250px;
+	float: right;
+}
+
+#colesq{
+	width: 930px;
+	float: left;
+	margin-right: 20px
+}
+
+#cxFalecon{
+	background-color: #ffd700;
+	width: 100%;
+	height: 190px;
+	font-size: 0.9em;
+	text-align: center; /* alinhamento do conteúdo */
+	border-radius: 10px;
+}
+
+#cxFalecon h3{
+	font-size: 1.5em;
+}
+
+#cxAreas{
+	width: 100%;
+	height: 190px;
+	font-size: 1.1em;
+	margin-top: 10px;
+}
+
+#equipe{
+	width: 460px;
+	height: 180px;
+	float: left;
+	margin-right: 10px;
+}
+
+#servicos{
+	width: 460px;
+	height: 180px;
+	float: left;
+}
+
+#noticias{
+	width: 460px;
+	height: 180px;
+	float: center;
+
+}
+
+.not{
+	width: 100$;
+	height: 120px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+	
+.imgNews{
+	width: 100px;
+	height: 100px;
+	float: left;
+	margin-right: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,68 @@
+<!-- comentario -->
+
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Listas HTML</title>
+		<meta charset="utf-8"/>
+		<style>
+			#menu{
+				list-style-type:none; /* desativa o marcador da lista */
+				
+			}
+			
+			#menu li{
+				float: left; /* posiciona o elemento a partir da borda lateral */
+				margin-right: 10px;
+			}
+			
+			#menu li a{
+				text-decoration: none; /* formata o estilo do texto */
+				color: green;
+			}
+			#menu li a:hover{
+				text-decoration: none; /* formata o estilo do texto */
+				color: orange;
+			}
+		</style>*
+	</head>
+	<body>
+		<h1 id="volta">Listas Ordenadas</h1>
+		<hr/>
+		<ol type="1" start="5">
+			<li>Introdução ao HTML</li>
+			<li>Tags de HTML</li>
+			<li>Conectando com CSS</li>
+			<li>Listas HTML
+				<ol>
+					<li>Listas Ordenadas</li>
+					<li>Listas Não Ordenadas</li>
+				</ol>
+			</li>
+			<li>Hyperlinks</li>
+		</ol>
+		
+		<h1>Listas Não Ordenadas</h1>
+		<hr/>
+		<ul style="list-style-type:circle;">
+			<li>Introdução ao HTML</li>
+			<li>Tags de HTML</li>
+			<li>Conectando com CSS</li>
+			<li>Listas HTML
+				<ul>
+					<li>Listas Ordenadas</li>
+					<li>Listas Não Ordenadas</li>
+				</ul>
+			</li>
+			<li>Hyperlinks</li>
+		</ul>
+		
+		<h1>Criando barras de navegação</h1>
+		<hr/>
+		<ul id="menu">
+			<li><a href="http://www.rj.senac.br" target="_blank">Site do Senac</a></li>
+			<li><a href="https://www.google.com" target="_blank">Site do Google</a></li>
+			<li><a href="#volta">Navegação Interna</a></li>
+		</ul>
+	<body>
+</html>
