@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Formulários HTML</title>
+		<meta charset="utf-8"/>
+	</head>
+	<body>
+		<h1>
+			Formulários HTML
+			<hr/>
+		</h1>
+		<form name="contato" method="get/post" action="mailto:contato@empresa.com.br">
+			<label for="nomeUser">Nome:</label><br/>
+			<input type="text" name="nomeUser" id="nomeUser" size="50" />
+			
+			<p>&nbsp;</p>
+			
+			<label for="emailUser">E-mail:</label><br/>
+			<input type="email" name="emailUs3r" id="emailUser" size="50" />
+			
+			<p>&nbsp;</p>
+			
+			<label for="assunto">Assunto:</label><br/>
+			<select name="assunto">
+				<option>Elogios</option>
+				<option>Críticas</option>
+				<option>Sugestões</option>
+				<option>Outros</option>
+			</select>
+			
+			<p>&nbsp;</p>
+			
+			<label for="mensagem">Mensagem:</label><br/>
+			<textarea name="mensagem" id="mensagem" cols="50" rows="20" style="resize:none;"></textarea>
+			
+			<p>&nbsp;</p>
+			
+			Sexp:
+			<input type="radio" name="sexo" value="Masculino"/> Masculino
+			<input type="radio" name="sexo" value="Feminino" /> Feminino
+			
+			<p>&nbsp;</p>
+			
+			Interesses:<br/>
+			<input type="checkbox" name="interesse" value="Tecnologia"/>Tecnologia<br/>
+			<input type="checkbox" name="interesse" value="Economia"/>Economia<br/>
+			<input type="checkbox" name="interesse" value="Esportes"/>Esportes<br/>
+			<input type="checkbox" name="interesse" value="Política"/>Política<br/>
+			<input type="checkbox" name="interesse" value="Educação"/>Educação<br/>
+			<input type="checkbox" name="interesse" value="Entretenimento"/>Entretenimento</br>
+		</form>
+		
+		<p>&nbsp;</p>
+		
+		<input type="submit" value="Enviar"/>
+		<input type="reset" value="Limpar"/>
+	<body>
+</html>

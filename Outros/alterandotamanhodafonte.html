@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<title>Aumenta Fonte</title>
+
+<style type="text/css">
+* {
+	font-family: arial, helvetica, sans-serif;
+}
+.reduz {
+	font-size: 75%;
+}
+</style>
+
+<script type="text/javascript">
+// Início do código de Aumentar/ Diminuir a letra
+
+//Para usar coloque o camando:
+// "javascript:mudaTamanho('tag_ou_id_alvo', -1);" para diminuir
+// e o comando "javascript:mudaTamanho('tag_ou_id_alvo', +1);" para aumentar
+
+	var tagAlvo = new Array('p'); //pega todas as tags p//
+	
+// Especificando os possíveis tamanhos de fontes, poderia ser: x-small, small...
+	var tamanhos = new Array( '9px', '10px', '11px', '12px', '13px', '14px', '15px', '17px' );
+	var tamanhoInicial = 2;
+	
+// estrutura da função mudaTamanho que será chamada a cada clique dos usuários nos  links para aumentar ou diminuir o tamanho do texto.
+	function mudaTamanho( idAlvo,acao ){
+		if (!document.getElementById) return
+			var selecionados = null,tamanho = tamanhoInicial,i,j,tagsAlvo;
+			tamanho += acao;
+			if ( tamanho <0 ) tamanho = 0;
+			if ( tamanho >7 ) tamanho = 7;
+			tamanhoInicial = tamanho;
+			if ( !(selecionados = document.getElementById( idAlvo ) ) ) selecionados = document.getElementsByTagName ( idAlvo ) [ 0 ];
+			
+			selecionados.style.fontSize = tamanhos[ tamanho ];
+			
+			for ( i = 0; i < tagAlvo.length; i++ ){
+				tagsAlvo = selecionados.getElementsByTagName( tagAlvo [ i ] ) ;
+				for (j = 0; j < tagsAlvo.length; j++ ) tagAlvo[ j ].style.fontSize = tamanhos[ tamanho ];
+			}
+	}
+// Fim do código de Aumentar/ Diminuir a letra
+
+</script>	
+</head>
+
+<body>
+<a href="javascript:mudaTamanho('texto', 1);">A+</a>&nbsp;
+<a href="javascript:mudaTamanho('texto', -1);" class="reduz">A-</a>
+
+<div style="font-size: 11px;" id="texto">
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultricies tincidunt libero a dapibus. Suspendisse condimentum, dolor vitae laoreet congue, velit ipsum rutrum nibh, a iaculis tortor lectus in ligula. Nullam vel nunc lectus. Ut felis libero, convallis at est a, tempor mollis magna. Nulla ex metus, euismod eget tellus non, luctus suscipit justo. Fusce vitae sapien lacinia, interdum nulla sit amet, dignissim orci. Nullam vestibulum aliquam sollicitudin. Etiam commodo, mauris ac suscipit mollis, felis tortor maximus tortor, tincidunt posuere mauris metus nec ligula. Morbi egestas velit at nibh blandit congue. Vivamus in sapien volutpat, maximus elit sit amet, sollicitudin sapien. Mauris venenatis enim felis, id ultrices mauris condimentum in.</p>
+
+<p>Praesent tellus enim, fringilla nec tellus sit amet, venenatis vestibulum est. Aenean egestas scelerisque dignissim. Pellentesque ac elit quis urna rhoncus maximus. Integer vehicula malesuada placerat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec quis mattis quam, nec laoreet purus. Maecenas hendrerit sollicitudin ante quis pellentesque. Pellentesque congue aliquam tellus vehicula egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce sit amet felis pellentesque, imperdiet sapien in, pharetra massa. Etiam sollicitudin augue nisi, ut placerat massa feugiat at.</p>
+
+<p>Cras mi orci, volutpat id dolor ac, lobortis lacinia nisl. Integer lacus quam, lobortis ac ipsum ac, tempor lacinia sem. Nam fermentum diam a commodo dapibus. Sed interdum in nulla convallis eleifend. Suspendisse scelerisque blandit pellentesque. Phasellus id urna suscipit velit bibendum maximus sed nec augue. Mauris viverra tellus sit amet mi ullamcorper dignissim. Proin ullamcorper sagittis eleifend. Pellentesque sed varius eros.</p>
+
+<p>Proin pellentesque purus nec iaculis efficitur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec efficitur, nibh eu tincidunt pretium, tellus justo varius libero, sit amet ullamcorper risus mauris vitae est. Morbi tristique commodo turpis, at malesuada ante venenatis quis. Suspendisse massa nulla, imperdiet vitae purus in, congue maximus risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tortor sem, dapibus quis cursus ac, efficitur eget libero. Vivamus sed imperdiet nisl.</p>
+
+<p>Integer congue at felis eget rhoncus. Suspendisse iaculis est ac ex mollis commodo. Sed mauris quam, malesuada quis eros in, viverra pharetra ante. Cras nec felis faucibus leo tincidunt porta sit amet congue enim. Fusce ornare finibus lectus, quis elementum quam ullamcorper ut. Donec volutpat, nisl auctor ornare varius, metus erat imperdiet velit, sed rutrum justo est quis libero. In ac odio et orci faucibus tincidunt. Cras in tempor ante. Nam varius ante ac est elementum rhoncus. Aenean nec enim imperdiet enim lobortis luctus.</p>
+
+</div>
+
+</body>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Tabelas HTML</title>
+		<meta charset="utf-8"/>
+		<!-- declarando o CSS interno -->
+		<style>
+			table{
+				width: 100%;
+				border: 2px solid #000000;
+				/* Tipos de borda CSS:
+				solid / dotted / double / dashed / groove / ridge / inset / outset */
+				border-collapse: collapse; /* elimina o espaço entre as células */
+			}
+			
+			th, td{
+				border: 1px solid #000000;
+			}
+			
+			tr:hover {
+				background-color: #556B2F;
+				color: #ffffff;
+		</style>	
+	</head>
+	<body>
+		<h1>Utilizando tabelas HTML</h1>
+		<hr/>
+		<!-- define a estrutura da tabela -->
+		<table>
+			<!-- cria uma nova linha na tabela -->
+			<tr>
+				<!-- cria uma nova célula de dados -->
+				<th>Aluno</th>
+				<th>Telefone</th>
+				<th>Curso</th>
+				<th>Turno</th>
+				<th colspan="2">Idioma</th>
+			</tr>
+			
+			<tr>
+				<td>Huguinho</td>
+				<td>22334455</td>
+				<td>Informática</td>
+				<td>Manhã</td>
+				<td>Espanhol</td>
+				<td>Inglês</td>
+			</tr>
+			
+			<tr>
+				<td>Zezinho</td>
+				<td>33445566</td>
+				<td>Administração</td>
+				<td>Manhã</td>
+				<td>Espanhol</td>
+				<td>Inglês</td>
+			</tr>
+			
+			<tr>
+				<td>Luizinho</td>
+				<td>44556677</td>
+				<td>Contabilidade</td>
+				<td>Tarde</td>
+				<td>Espanhol</td>
+				<td>Inglês</td>
+			</tr>
+		</table>
+		
+		<p>&nbsp;</p>
+		
+		<table>
+			<!-- cria uma nova linha na tabela -->
+			<tr>
+				<!-- cria uma nova célula de dados -->
+				<th>Aluno</th>
+				<th>Telefone</th>
+				<th>Curso</th>
+				<th>Turno</th>
+				<th colspan="3">Idioma</th>
+			</tr>
+			
+			<tr>
+				<td	rowspan="3">Huguinho<br/>
+					Zezinho<br/>
+					Luizinho
+				</td>
+				<td>22334455</td>
+				<td>Informática</td>
+				<td>Manhã</td>
+				<td>Espanhol</td>
+				<td>Inglês</td>
+			</tr>
+			
+			<tr>
+				<td>33445566</td>
+				<td>Administração</td>
+				<td>Manhã</td>
+				<td>Espanhol</td>
+				<td>Inglês</td>
+			</tr>
+			
+			<tr>
+				<td>44556677</td>
+				<td>Contabilidade</td>
+				<td>Tarde</td>
+				<td>Espanhol</td>
+				<td>Inglês</td>
+			</tr>
+		</table>
+	</body>
+</html>
